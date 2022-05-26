@@ -4,13 +4,11 @@ import { defineComponent, PropType } from "@vue/composition-api";
 export default defineComponent({
 
   props: {
-    msg: { type: String },
     features: { type: Object as PropType<Record<string, string | boolean>>, required: true }
   },
   data() {
     return {
       feature: 'foo',
-      count: 0
     };
   },
   methods: {
@@ -24,12 +22,6 @@ export default defineComponent({
 <template>
   <div>
     <div>
-      <h1>{{ msg }}</h1>
-      <button
-        type="button"
-        @click="count++"
-      >count is: {{ count }}</button>
-
       <!-- IDE Error -->
       <div>
         <h2>Error in ide</h2>

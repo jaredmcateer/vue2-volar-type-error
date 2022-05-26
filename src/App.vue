@@ -10,8 +10,7 @@ export default {
 
 <template>
 <div>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" :features="{foo: true}" />
+  <HelloWorld :features="{foo: true}" />
 </div>
 </template>
 
